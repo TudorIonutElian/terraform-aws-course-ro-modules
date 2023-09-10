@@ -14,7 +14,13 @@ provider "aws" {
   profile = "default"
 }
 
-module "vpc" {
+module "module_vpc" {
   source = "../vpc"
   numar_de_instance_vpc = 4
 }
+
+
+module "module_ec2" {
+  source = "../ec2"
+}
+
