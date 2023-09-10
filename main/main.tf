@@ -16,4 +16,5 @@ provider "aws" {
 
 module "vpc" {
   source = "../vpc"
+  numar_de_instance_vpc = 4
 }
